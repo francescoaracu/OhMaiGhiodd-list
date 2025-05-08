@@ -32,8 +32,8 @@ DADDY = "dad"
 LOGO_CACHE = {}
 
 # Define keywords for filtering channels
-EVENT_KEYWORDS = ["italy", "atp", "tennis", "formula uno", "f1", "motogp", "moto gp", "volley", "serie a", "serie b", "serie c", "uefa champions", "uefa europa",
-                 "conference league", "coppa italia", "premier league", "bundesliga", "la liga", "ligue 1"]
+EVENT_KEYWORDS = ["italy", "atp", "wta", "tennis", "formula uno", "f1", "motogp", "moto gp", "volley", "serie a", "serie b", "serie c", "uefa champions", "uefa europa",
+                 "conference league", "coppa italia", "premier league", "bundesliga", "la liga", "ligue 1", "pdc"]
 
 # Headers for requests
 headers = {
@@ -414,9 +414,9 @@ def process_events():
 
     # Define categories to exclude
     excluded_categories = [
-        "TV Shows", "Cricket", "Aussie rules", "Snooker", "Baseball",
+        "TV Shows", "Cricket", "Aussie rules", "Baseball",
         "Biathlon", "Cross Country", "Horse Racing", "Ice Hockey",
-        "Waterpolo", "Golf", "Darts", "Cycling"
+        "Am. Football", "Badminton", "Handball", "Lacrosse", "Rugby League", "TV Show", "WWE"
     ]
 
     # First pass to gather category statistics
