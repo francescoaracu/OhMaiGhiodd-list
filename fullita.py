@@ -25,8 +25,8 @@ M3U8_OUTPUT_FILE = "fullita.m3u8"
 LOGO = "https://raw.githubusercontent.com/cribbiox/eventi/refs/heads/main/ddsport.png"
 
 # Define keywords for filtering channels
-EVENT_KEYWORDS = ["italy", "atp", "tennis", "formula uno", "f1", "motogp", "moto gp", "volley", "serie a", "serie b", "serie c", "uefa champions", "uefa europa",
-                 "conference league", "coppa italia"]
+EVENT_KEYWORDS = ["italy", "atp", "wta", "tennis", "formula uno", "f1", "motogp", "moto gp", "volley", "serie a", "serie b", "serie c", "uefa champions", "uefa europa",
+                 "conference league", "coppa italia", "pdc"]
 
 # Aggiungi una nuova lista di canali specifici da includere
 CHANNEL_KEYWORDS = ["IT", "Italia", "Rai Sport", "Amazon", "Canale 5", "Rai 1"]
@@ -226,9 +226,9 @@ def process_events():
 
     # Define categories to exclude
     excluded_categories = [
-        "TV Shows", "Cricket", "Aussie rules", "Snooker", "Baseball",
+        "TV Shows", "Cricket", "Aussie rules", "Baseball",
         "Biathlon", "Cross Country", "Horse Racing", "Ice Hockey",
-        "Waterpolo", "Golf", "Darts", "Cycling"
+        "Am. Football", "Badminton", "Handball", "Lacrosse", "Rugby League", "TV Show", "WWE"
     ]
 
     # First pass to gather category statistics
